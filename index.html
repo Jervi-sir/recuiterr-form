@@ -26,7 +26,7 @@
 
     <!-- Google Web Fonts -->
 
-</head> 
+</head>
 
 <body class="sticky-header">
 
@@ -45,15 +45,15 @@
             <div class="content-wrap">
                 <div class="login-content">
                     <div class="item-logo">
-                        <a href="#"><img src="media/logo.svg" alt="logo"></a>
+                        <a href="#"><img src="media/banner/logo-words.png" alt="logo"></a>
                     </div>
                     <div class="login-form-wrap">
                         <ul class="nav nav-tabs" role="tablist">
                             <li class="nav-item">
-                                <a  class="nav-link active" data-toggle="tab" href="#login-tab" role="tab" aria-selected="true"><i class="icofont-download"></i> Registration </a>
+                                <a class="nav-link active" data-toggle="tab" href="#login-tab" role="tab" aria-selected="true"><i class="icofont-download"></i> Registration </a>
                             </li>
                             <li class="nav-item">
-                                <a  class="nav-link" data-toggle="tab" href="#registration-tab" role="tab" aria-selected="false"><i class="icofont-info-circle"></i> About us</a>
+                                <a class="nav-link" data-toggle="tab" href="#registration-tab" role="tab" aria-selected="false"><i class="icofont-info-circle"></i> About us</a>
                             </li>
                         </ul>
                         <div class="tab-content">
@@ -68,11 +68,11 @@
                                     </div>
                                     <div class="form-group">
                                         <input id="password" type="password" class="form-control" name="password" placeholder="Password" required/>
-                                        <button type="button" onclick="toggle(this)" class="toggle-psswd icofont-eye-alt" >
+                                        <button type="button" onclick="toggle(this)" class="toggle-psswd icofont-eye-alt">
                                             <!--icofont-eye-blocked hide-->
                                         </button>
                                     </div>
-                                   
+
 
                                     <div class="form-group">
                                         <input type="text" class="form-control" name="code" placeholder="Your Student Code" required/>
@@ -87,114 +87,138 @@
                             </div>
                             <div class="tab-pane registration-tab fade" id="registration-tab" role="tabpanel">
                                 <h3 class="item-title">About us</h3>
-
+                                <div class="images">
+                                    <img src="media/banner/Logo.png" alt="">
+                                </div>
                                 <span class="about-us">
-                                    we are house of entrepreneur, we help competent and ambitious people to reach their goals
+                                    we are a student opportunities space, we help ambitious people to reach their dreams
                                 </span>
                                 <h5>Follow us </h5>
                                 <ul class="social">
-                                    <li><i class="icofont-facebook"></i></li>
+                                    <li><a href="https://www.facebook.com/%D8%AF%D8%A7%D8%B1-%D8%A7%D9%84%D9%85%D9%82%D8%A7%D9%88%D9%84%D8%AA%D9%8A%D8%A9-%D8%AC%D8%A7%D9%85%D8%B9%D8%A9-%D8%B9%D9%8A%D9%86-%D8%AA%D9%85%D9%88%D8%B4%D9%86%D8%AA-105911321310305/"
+                                            target="_blank"><i class="icofont-facebook"></i></a></li>
                                     <li><i class="icofont-instagram"></i></li>
                                     <li><i class="icofont-ui-email"></i></li>
                                 </ul>
-                            </div>                   
+                            </div>
                         </div>
-                        
+
                     </div>
                     <footer>
-                        Copyright <a href="https://gacem.netlify.com" target="_blank">Jervi</a> from <a href="https://www.instagram.com/2kingswebsites/" target="_blank">2Kw.</a> 
+                        Copyright <a href="https://gacem.netlify.com" target="_blank">Jervi</a> from <a href="https://www.instagram.com/2kingswebsites/" target="_blank">2Kw.</a>
                     </footer>
+                </div>
             </div>
+
+
         </div>
-        
-       
-    </div>
-   
-    <!-- Jquery Js -->
-    <script src="dependencies/jquery/js/jquery.min.js"></script>
-    <script src="dependencies/popper.js/js/popper.min.js"></script>
-    <script src="dependencies/bootstrap/js/bootstrap.min.js"></script>
-    <script src="dependencies/imagesloaded/js/imagesloaded.pkgd.min.js"></script>
-    <script src="dependencies/isotope-layout/js/isotope.pkgd.min.js"></script>
-    <script src="dependencies/slick-carousel/js/slick.min.js"></script>
-    <script src="dependencies/sal.js/sal.js"></script>
-    <script src="dependencies/magnific-popup/js/jquery.magnific-popup.min.js"></script>
-    <script src="dependencies/bootstrap-validator/js/validator.min.js"></script>
-    <script src="dependencies/select2/js/select2.min.js"></script>
 
-    <!-- Site Scripts -->
-    <script src="assets/js/app.js"></script>
+        <!-- Jquery Js -->
+        <script src="dependencies/jquery/js/jquery.min.js"></script>
+        <script src="dependencies/popper.js/js/popper.min.js"></script>
+        <script src="dependencies/bootstrap/js/bootstrap.min.js"></script>
+        <script src="dependencies/imagesloaded/js/imagesloaded.pkgd.min.js"></script>
+        <script src="dependencies/isotope-layout/js/isotope.pkgd.min.js"></script>
+        <script src="dependencies/slick-carousel/js/slick.min.js"></script>
+        <script src="dependencies/sal.js/sal.js"></script>
+        <script src="dependencies/magnific-popup/js/jquery.magnific-popup.min.js"></script>
+        <script src="dependencies/bootstrap-validator/js/validator.min.js"></script>
+        <script src="dependencies/select2/js/select2.min.js"></script>
+
+        <!-- Site Scripts -->
+        <script src="assets/js/app.js"></script>
 
 
-    <!-- Last minute fixes -->
-    <style>
-        .toggle-psswd {
-            cursor: pointer;
-            position: absolute;
-            top: 1rem;
-            right: 1rem;
-            background-color: transparent;
-            border: none;
-        }
-        .about-us {
-            max-width: 22rem;
-            display: inline-block;
-            padding: 1rem 0;
-        }
-        h5 {
-            margin-top: 3rem;
-            margin-bottom: 1rem;
-            text-align: center;
-        }
-        footer {
-            font-family: inherit;
-            position: fixed;
-            bottom: 0.5rem;
-            left: 0;
-            right: 0;
-            text-align: center;
-            color: black;
-        }
-        footer a {
-            color: black;
-            opacity: 0.5;
-        }
-        .social {
-            display: flex;
-            justify-content: space-around;
-        }
-
-        .social li {
-            font-size: 2rem;
-        }
-    </style>
-    <script>
-        function toggle(mode) {
-            var psswdStatus = mode.classList.contains('icofont-eye-alt');
-            var psswdContainer = document.getElementById('password');
-            if(psswdStatus) {
-                psswdContainer.type = "text";
-                mode.classList.remove("icofont-eye-alt");
-                mode.classList.add("icofont-eye-blocked");
-
-            } else {
-                psswdContainer.type = "password";
-                mode.classList.remove("icofont-eye-blocked");
-                mode.classList.add("icofont-eye-alt");
+        <!-- Last minute fixes -->
+        <style>
+            .toggle-psswd {
+                cursor: pointer;
+                position: absolute;
+                top: 1rem;
+                right: 0.5rem;
+                background-color: transparent;
+                border: none;
             }
-        }
+            
+            .about-us {
+                max-width: 22rem;
+                display: inline-block;
+                padding: 1rem 0;
+            }
+            
+            .images {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+            }
+            
+            .images img {
+                width: 50%;
+            }
+            
+            @media only screen and (max-width: 575px) {
+                .login-page-wrap .item-logo a {
+                    width: 100%;
+                }
+            }
+            
+            h5 {
+                margin-top: 3rem;
+                margin-bottom: 1rem;
+                text-align: center;
+            }
+            
+            footer {
+                font-family: inherit;
+                position: fixed;
+                bottom: 0.5rem;
+                left: 0;
+                right: 0;
+                text-align: center;
+                color: black;
+            }
+            
+            footer a {
+                color: black;
+                opacity: 0.5;
+            }
+            
+            .social {
+                display: flex;
+                justify-content: space-around;
+            }
+            
+            .social li {
+                font-size: 2rem;
+            }
+        </style>
+        <script>
+            function toggle(mode) {
+                var psswdStatus = mode.classList.contains('icofont-eye-alt');
+                var psswdContainer = document.getElementById('password');
+                if (psswdStatus) {
+                    psswdContainer.type = "text";
+                    mode.classList.remove("icofont-eye-alt");
+                    mode.classList.add("icofont-eye-blocked");
 
-        function setHeight() {
-            var body = document.body,
-                html = document.documentElement;
+                } else {
+                    psswdContainer.type = "password";
+                    mode.classList.remove("icofont-eye-blocked");
+                    mode.classList.add("icofont-eye-alt");
+                }
+            }
 
-            var height = Math.max( body.scrollHeight, body.offsetHeight, 
-                                html.clientHeight, html.scrollHeight, html.offsetHeight );
+            function setHeight() {
+                var body = document.body,
+                    html = document.documentElement;
 
-            document.getElementsByTagName('body')[0].style.height = height + "px";
-            console.log(height);
-        }
-    </script>
+                var height = Math.max(body.scrollHeight, body.offsetHeight,
+                    html.clientHeight, html.scrollHeight, html.offsetHeight);
+
+                document.getElementsByTagName('body')[0].style.height = height + "px";
+                console.log(height);
+            }
+        </script>
 </body>
 
 <!-- Mirrored from radiustheme.com/demo/html/cirkle/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Nov 2021 16:36:11 GMT -->
