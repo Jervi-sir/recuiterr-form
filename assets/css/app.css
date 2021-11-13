@@ -60,12 +60,12 @@ body {
     line-height: 28px;
     color: #646464;
     font-weight: 400;
-    height: 100%;
     vertical-align: baseline;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
     background-color: #ffffff;
+    
 }
 
 p {
@@ -645,7 +645,6 @@ h6 {
     margin-top: -97px;
     padding: 185px 0 95px;
     background-color: #615dfa;
-    background-image: url("../../media/banner/hero_1.jpg");
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1644,7 +1643,6 @@ nav.template-main-menu>ul>li ul.mega-menu>li {
     width: 230px;
     display: inline-block;
     margin: 0 5px;
-    float: left;
 }
 
 nav.template-main-menu>ul>li ul.mega-menu>li>ul.sub-menu {
@@ -4146,7 +4144,6 @@ nav.template-main-menu>ul>li:hover ul.mega-menu {
 }
 
 .hero-banner:before {
-    content: url("../../media/banner/hero_1.jpg");
     position: absolute;
     top: 0;
     left: 0;
@@ -5930,6 +5927,10 @@ nav.template-main-menu>ul>li:hover ul.mega-menu {
     height: 100vh;
     width: 100%;
     overflow: hidden;
+    background-image: url("../../media/banner/hero_1.jpg");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: left top;
 }
 
 @media only screen and (max-width: 575px) {
@@ -5941,10 +5942,7 @@ nav.template-main-menu>ul>li:hover ul.mega-menu {
 
 .login-page-wrap .content-wrap {
     height: 100%;
-    background-image: url("../../media/banner/hero_1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -6028,7 +6026,7 @@ nav.template-main-menu>ul>li:hover ul.mega-menu {
 }
 
 .login-page-wrap .login-form-wrap {
-    padding-bottom: 50px;
+    padding-bottom: 70px;
     position: relative;
     padding-left: 52px;
     z-index: 1;

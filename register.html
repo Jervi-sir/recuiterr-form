@@ -8,7 +8,7 @@
     <!-- Meta Data -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Cirkle | Login</title>
+    <title>Entp | Login</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon -->
@@ -26,7 +26,7 @@
 
     <!-- Google Web Fonts -->
 
-</head>
+</head> 
 
 <body class="sticky-header">
 
@@ -50,61 +50,63 @@
                     <div class="login-form-wrap">
                         <ul class="nav nav-tabs" role="tablist">
                             <li class="nav-item">
-                                <a class="nav-link active" data-toggle="tab" href="#login-tab" role="tab" aria-selected="true"><i class="icofont-download"></i> Registration </a>
+                                <a  class="nav-link active" data-toggle="tab" href="#login-tab" role="tab" aria-selected="true"><i class="icofont-download"></i> Registration </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#registration-tab" role="tab" aria-selected="false"><i class="icofont-info-circle"></i> About us</a>
+                                <a  class="nav-link" data-toggle="tab" href="#registration-tab" role="tab" aria-selected="false"><i class="icofont-info-circle"></i> About us</a>
                             </li>
                         </ul>
                         <div class="tab-content">
                             <div class="tab-pane login-tab fade show active" id="login-tab" role="tabpanel">
-                                <h3 class="item-title">Sign Into <span>Your Account</span></h3>
-                                <form method="POST" action="{{ route('login') }}">
+                                <h3 class="item-title">Sign Into <span>our community</span></h3>
+                                <form method="POST" action="#">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" name="email" placeholder="Your E-mail">
+                                        <input type="text" class="form-control" name="name" placeholder="Your Name">
                                     </div>
                                     <div class="form-group">
-                                        <input type="password" class="form-control" name="password" placeholder="Password">
+                                        <input type="email" class="form-control" name="email" placeholder="E-mail">
+                                    </div>
+                                    <div class="form-group">
+                                        <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+                                        <button type="button" onclick="toggle(this)" class="toggle-psswd icofont-eye-alt" >
+                                            <!--icofont-eye-blocked hide-->
+                                        </button>
                                     </div>
                                    
+
                                     <div class="form-group">
-                                        <input type="submit" name="login-btn" class="submit-btn" value="Login">
+                                        <input type="text" class="form-control" name="name" placeholder="Your Student Code">
                                     </div>
-                                    
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="name" placeholder="Speciality Field">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="submit" name="login-btn" class="submit-btn" value="Join">
+                                    </div>
                                 </form>
-                                <!-- <div class="account-create">
-                    		Don't have an account yet? <a href="#registration-tab">Sign Up Now</a>
-                    	</div> -->
                             </div>
                             <div class="tab-pane registration-tab fade" id="registration-tab" role="tabpanel">
-                                <h3 class="item-title">Sign Up Your Account</h3>
-                                <form method="POST" action="{{ route('register') }}">
-                                    <div class="form-group">
-                                        <input type="text" name="name" class="form-control" placeholder="Username">
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="email" name="email" class="form-control" placeholder="E-mail">
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="password" name="password" class="form-control" placeholder="Password">
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="form-check mb-3">
-                                            <input type="checkbox" class="form-check-input" id="validationFormCheck1">
-                                            <label class="form-check-label" for="validationFormCheck1">I accept the <a href="#">Terms and Conditions</a></label>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="submit" name="registration" class="submit-btn" value="Complete Registration">
-                                    </div>
-                                </form>
-                            </div>
+                                <h3 class="item-title">About us</h3>
+
+                                <span class="about-us">
+                                    we are house of entrepreneur, we help competent and ambitious people to reach their goals
+                                </span>
+                                <h5>Follow us </h5>
+                                <ul class="social">
+                                    <li><i class="icofont-facebook"></i></li>
+                                    <li><i class="icofont-instagram"></i></li>
+                                    <li><i class="icofont-ui-email"></i></li>
+                                </ul>
+                            </div>                   
                         </div>
+                        
                     </div>
-                </div>
+                    <footer>
+                        Copyright <a href="https://gacem.netlify.com" target="_blank">Jervi</a> from <a href="https://www.instagram.com/2kingswebsites/" target="_blank">2Kw.</a> 
+                    </footer>
             </div>
         </div>
-
+        
         <!--=====================================-->
         <!--=      Header Search Start          =-->
         <!--=====================================-->
@@ -118,6 +120,7 @@
             </form>
         </div>
     </div>
+   
     <!-- Jquery Js -->
     <script src="dependencies/jquery/js/jquery.min.js"></script>
     <script src="dependencies/popper.js/js/popper.min.js"></script>
@@ -132,6 +135,77 @@
 
     <!-- Site Scripts -->
     <script src="assets/js/app.js"></script>
+
+
+    <!-- Last minute fixes -->
+    <style>
+        .toggle-psswd {
+            cursor: pointer;
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background-color: transparent;
+            border: none;
+        }
+        .about-us {
+            max-width: 22rem;
+            display: inline-block;
+            padding: 1rem 0;
+        }
+        h5 {
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        footer {
+            font-family: inherit;
+            position: fixed;
+            bottom: 0.5rem;
+            left: 0;
+            right: 0;
+            text-align: center;
+            color: black;
+        }
+        footer a {
+            color: black;
+            opacity: 0.5;
+        }
+        .social {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .social li {
+            font-size: 2rem;
+        }
+    </style>
+    <script>
+        function toggle(mode) {
+            var psswdStatus = mode.classList.contains('icofont-eye-alt');
+            var psswdContainer = document.getElementById('password');
+            if(psswdStatus) {
+                psswdContainer.type = "text";
+                mode.classList.remove("icofont-eye-alt");
+                mode.classList.add("icofont-eye-blocked");
+
+            } else {
+                psswdContainer.type = "password";
+                mode.classList.remove("icofont-eye-blocked");
+                mode.classList.add("icofont-eye-alt");
+            }
+        }
+
+        function setHeight() {
+            var body = document.body,
+                html = document.documentElement;
+
+            var height = Math.max( body.scrollHeight, body.offsetHeight, 
+                                html.clientHeight, html.scrollHeight, html.offsetHeight );
+
+            document.getElementsByTagName('body')[0].style.height = height + "px";
+            console.log(height);
+        }
+    </script>
 </body>
 
 <!-- Mirrored from radiustheme.com/demo/html/cirkle/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Nov 2021 16:36:11 GMT -->
