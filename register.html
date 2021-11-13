@@ -59,15 +59,15 @@
                         <div class="tab-content">
                             <div class="tab-pane login-tab fade show active" id="login-tab" role="tabpanel">
                                 <h3 class="item-title">Sign Into <span>our community</span></h3>
-                                <form method="POST" action="#">
+                                <form name="contact" netlify>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" name="name" placeholder="Your Name">
+                                        <input type="text" class="form-control" name="name" placeholder="Your Name" />
                                     </div>
                                     <div class="form-group">
-                                        <input type="email" class="form-control" name="email" placeholder="E-mail">
+                                        <input type="email" class="form-control" name="email" placeholder="E-mail" />
                                     </div>
                                     <div class="form-group">
-                                        <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+                                        <input id="password" type="password" class="form-control" name="password" placeholder="Password" />
                                         <button type="button" onclick="toggle(this)" class="toggle-psswd icofont-eye-alt" >
                                             <!--icofont-eye-blocked hide-->
                                         </button>
@@ -75,10 +75,10 @@
                                    
 
                                     <div class="form-group">
-                                        <input type="text" class="form-control" name="name" placeholder="Your Student Code">
+                                        <input type="text" class="form-control" name="code" placeholder="Your Student Code" />
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" name="name" placeholder="Speciality Field">
+                                        <input type="text" class="form-control" name="field" placeholder="Speciality Field" />
                                     </div>
                                     <div class="form-group">
                                         <input type="submit" name="login-btn" class="submit-btn" value="Join">
@@ -107,18 +107,7 @@
             </div>
         </div>
         
-        <!--=====================================-->
-        <!--=      Header Search Start          =-->
-        <!--=====================================-->
-        <div id="header-search" class="header-search">
-            <button type="button" class="close">×</button>
-            <form class="header-search-form">
-                <input type="search" value="" placeholder="Search here..." />
-                <button type="submit" class="search-btn">
-                    <i class="flaticon-search"></i>
-                </button>
-            </form>
-        </div>
+       
     </div>
    
     <!-- Jquery Js -->
