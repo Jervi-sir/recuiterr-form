@@ -50,7 +50,10 @@
                     <div class="login-form-wrap success-msg ">
                         <div class="tab-content">
                             <div class="tab-pane login-tab fade show active" id="login-tab" role="tabpanel">
-                                <h3 class="item-title">Sign Into <span>our community</span></h3>
+                                <h3 class="item-title">Thank you!</h3>
+                                <span>Your form submission has been received.</span>
+                                <br>
+                                <a id="back-link" href="https://www.me-uat.com/">← Back to our site</a>
                             </div>
                         </div>
                     </div>
@@ -62,6 +65,11 @@
 
 
         </div>
+
+        <script>
+            var url = window.location.origin;
+            document.getElementById('back-link').href = url;
+        </script>
 
         <!-- Jquery Js -->
         <script src="dependencies/jquery/js/jquery.min.js"></script>
@@ -102,6 +110,14 @@
                 width: 50%;
             }
             
+            .login-page-wrap .tab-content .item-title {
+                margin-bottom: 1rem;
+            }
+            
+            .login-page-wrap .tab-content {
+                padding: 30px 60px;
+            }
+            
             .login-page-wrap .item-logo a {
                 width: 100%;
             }
@@ -113,6 +129,12 @@
             
             .login-page-wrap .tab-content {
                 border-radius: 15px;
+            }
+            
+            a {
+                color: #615dfa;
+                margin-top: 0.5rem;
+                font-weight: 600;
             }
             
             @media only screen and (max-width: 575px) {
