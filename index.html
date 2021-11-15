@@ -125,7 +125,7 @@
             },
             methods: {
                 submit: function() {
-                    fetch('http://127.0.0.1:8000/api/register', {
+                    fetch('https://uat-recruiter.herokuapp.com/api/register', {
                             method: 'POST', // or 'PUT'
                             headers: {
                                 'Content-Type': 'application/json',
@@ -150,7 +150,7 @@
                 }
             },
             mounted: function() {
-                fetch('http://127.0.0.1:8000/api/wakeup', {
+                fetch('https://uat-recruiter.herokuapp.com/api/wakeup', {
                     method: 'GET', // or 'PUT'
                     headers: {
                         'Content-Type': 'application/json',
